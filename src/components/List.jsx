@@ -3,6 +3,7 @@ import Item from './Item';
 
 function List({items, deleteItem, editItem}){
     return(
+        // Campo que ordena los items en una lista en el React
         <ul>
             {items.map((item)=>(
                 <Item key={item.id} item={item} deleteItem={deleteItem} editItem={editItem}/>
